@@ -1,0 +1,17 @@
+{
+    "name": "proj-node-server",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "nodemon --ignore \"./data\" server.js",
+        "dev": "nodemon --ignore \"./data\" server.js"
+    },
+    "author": "Me",
+    "type": "module",
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "cors": "^2.8.5",
+        "cryptr": "^6.2.0",
+        "express": "^5.1.0",
+        "follow-redirects": "^1.15.3"
+    }
+}

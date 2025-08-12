@@ -1,0 +1,112 @@
+[
+  {
+    "_id": "hEZD70",
+    "name": "Puzzle Master",
+    "inStock": false,
+    "labels": [
+      "Baby"
+    ],
+    "imgUrl": "https://robohash.org/1?set=set3",
+    "price": 240,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "ivmK5m",
+    "name": "Box Game Challenge",
+    "inStock": false,
+    "labels": [
+      "Outdoor"
+    ],
+    "imgUrl": "https://robohash.org/2?set=set3",
+    "price": 204,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "QoVL8z",
+    "name": "Mini Scooter",
+    "inStock": true,
+    "labels": [
+      "Art"
+    ],
+    "imgUrl": "https://robohash.org/3?set=set3",
+    "price": 50,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "iRDu6s",
+    "name": "Puzzle Master",
+    "inStock": false,
+    "labels": [
+      "Battery Powered"
+    ],
+    "imgUrl": "https://robohash.org/4?set=set3",
+    "price": 234,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "xdIKAl",
+    "name": "Puzzle Master",
+    "inStock": false,
+    "labels": [
+      "Outdoor"
+    ],
+    "imgUrl": "https://robohash.org/5?set=set3",
+    "price": 134,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "SnVqMt",
+    "name": "Dollhouse Deluxe",
+    "inStock": false,
+    "labels": [
+      "Doll"
+    ],
+    "imgUrl": "https://robohash.org/6?set=set3",
+    "price": 79,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "SAlkK4",
+    "name": "Artistic Easel",
+    "inStock": false,
+    "labels": [
+      "Art"
+    ],
+    "imgUrl": "https://robohash.org/7?set=set3",
+    "price": 92,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "KDpyBe",
+    "name": "Battery Bot",
+    "inStock": true,
+    "labels": [
+      "Box game"
+    ],
+    "imgUrl": "https://robohash.org/8?set=set3",
+    "price": 139,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "pP26il",
+    "name": "Box Game Challenge",
+    "inStock": false,
+    "labels": [
+      "Baby"
+    ],
+    "imgUrl": "https://robohash.org/9?set=set3",
+    "price": 130,
+    "createdAt": 1755015770222
+  },
+  {
+    "_id": "CmqxJR",
+    "name": "Box Game Challenge",
+    "inStock": false,
+    "labels": [
+      "Puzzle"
+    ],
+    "imgUrl": "https://robohash.org/10?set=set3",
+    "price": 240,
+    "createdAt": 1755015770222
+  }
+]
