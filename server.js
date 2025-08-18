@@ -83,7 +83,7 @@ app.put('/api/toy/:id', (req, res) => {
         _id: req.params.id,
         name: req.body.name,
         price: +req.body.price,
-        inStock: req.body.inStock === 'true',
+        inStock: (req.body.inStock === true || req.body.inStock === 'true') ? true : false,
         labels: req.body.labels,
         imgUrl: req.body.imgUrl,
         createdAt: req.body.createdAt,

@@ -1,111 +1,118 @@
 [
   {
     "_id": "ivmK5m",
-    "name": "Box Game Challenge",
-    "inStock": false,
+    "name": "Bingo",
+    "inStock": true,
     "labels": [
-      "Outdoor"
+      "puzzle",
+      "box game"
     ],
-    "imgUrl": "https://robohash.org/2?set=set3",
-    "price": 204,
+    "imgUrl": "https://robohash.org/2?set=set5",
+    "price": 140,
     "createdAt": 1755015770222
   },
   {
     "_id": "QoVL8z",
     "name": "Mini Scooter",
-    "inStock": true,
+    "inStock": false,
     "labels": [
       "Art"
     ],
-    "imgUrl": "https://robohash.org/3?set=set3",
+    "imgUrl": "https://robohash.org/3?set=set5",
     "price": 50,
     "createdAt": 1755015770222
   },
   {
     "_id": "iRDu6s",
-    "name": "Puzzle Master",
-    "inStock": false,
+    "name": "Puzzle",
+    "inStock": true,
     "labels": [
-      "Battery Powered"
+      "art",
+      "puzzle"
     ],
-    "imgUrl": "https://robohash.org/4?set=set3",
-    "price": 234,
+    "imgUrl": "https://robohash.org/4?set=set5",
+    "price": 100,
     "createdAt": 1755015770222
   },
   {
     "_id": "xdIKAl",
-    "name": "Puzzle Master",
+    "name": "Lego",
     "inStock": false,
     "labels": [
-      "Outdoor"
+      "box game",
+      "puzzle"
     ],
-    "imgUrl": "https://robohash.org/5?set=set3",
+    "imgUrl": "https://robohash.org/5?set=set5",
     "price": 134,
     "createdAt": 1755015770222
   },
   {
     "_id": "SnVqMt",
-    "name": "Dollhouse Deluxe",
-    "inStock": false,
+    "name": "Bimba",
+    "inStock": true,
     "labels": [
-      "Doll"
+      "on wheels",
+      "outdoor"
     ],
-    "imgUrl": "https://robohash.org/6?set=set3",
-    "price": 79,
+    "imgUrl": "https://robohash.org/6?set=set5",
+    "price": 70,
     "createdAt": 1755015770222
   },
   {
     "_id": "SAlkK4",
-    "name": "Artistic Easel",
+    "name": "Paint board",
     "inStock": false,
     "labels": [
       "Art"
     ],
-    "imgUrl": "https://robohash.org/7?set=set3",
-    "price": 92,
+    "imgUrl": "https://robohash.org/7?set=set5",
+    "price": 50,
     "createdAt": 1755015770222
   },
   {
     "_id": "KDpyBe",
-    "name": "Battery Bot",
+    "name": "Sonic",
     "inStock": true,
     "labels": [
-      "Box game"
+      "doll"
     ],
-    "imgUrl": "https://robohash.org/8?set=set3",
+    "imgUrl": "https://robohash.org/8?set=set5",
     "price": 139,
     "createdAt": 1755015770222
   },
   {
     "_id": "pP26il",
-    "name": "Box Game Challenge",
+    "name": "Shapes puzzle",
     "inStock": false,
     "labels": [
-      "Baby"
+      "baby"
     ],
-    "imgUrl": "https://robohash.org/9?set=set3",
+    "imgUrl": "https://robohash.org/9?set=set5",
     "price": 130,
     "createdAt": 1755015770222
   },
   {
     "_id": "CmqxJR",
-    "name": "Box Game Challenge",
+    "name": "Taki",
     "inStock": false,
     "labels": [
-      "Puzzle"
+      "puzzle",
+      "box game"
     ],
-    "imgUrl": "https://robohash.org/10?set=set3",
-    "price": 240,
+    "imgUrl": "https://robohash.org/10?set=set5",
+    "price": 60,
     "createdAt": 1755015770222
   },
   {
-    "price": 200,
-    "_id": "3OY8A",
-    "name": "Pickachu",
-    "inStock": false,
+    "name": "Pikachu",
+    "price": 150,
+    "inStock": true,
     "labels": [
-      "Baby",
-      "Doll"
-    ]
+      "doll",
+      "battery Powered"
+    ],
+    "imgUrl": "https://robohash.org/10?set=set5",
+    "_id": "Y187w",
+    "createdAt": 1755186745080
   }
 ]
