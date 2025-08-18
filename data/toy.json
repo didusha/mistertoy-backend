@@ -1,6 +1,5 @@
 [
   {
-    "_id": "ivmK5m",
     "name": "Bingo",
     "inStock": true,
     "labels": [
@@ -12,7 +11,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "QoVL8z",
     "name": "Mini Scooter",
     "inStock": false,
     "labels": [
@@ -23,7 +21,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "iRDu6s",
     "name": "Puzzle",
     "inStock": true,
     "labels": [
@@ -35,7 +32,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "xdIKAl",
     "name": "Lego",
     "inStock": false,
     "labels": [
@@ -47,7 +43,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "SnVqMt",
     "name": "Bimba",
     "inStock": true,
     "labels": [
@@ -59,7 +54,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "SAlkK4",
     "name": "Paint board",
     "inStock": false,
     "labels": [
@@ -70,7 +64,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "KDpyBe",
     "name": "Sonic",
     "inStock": true,
     "labels": [
@@ -81,7 +74,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "pP26il",
     "name": "Shapes puzzle",
     "inStock": false,
     "labels": [
@@ -92,7 +84,6 @@
     "createdAt": 1755015770222
   },
   {
-    "_id": "CmqxJR",
     "name": "Taki",
     "inStock": false,
     "labels": [
@@ -112,7 +103,6 @@
       "battery Powered"
     ],
     "imgUrl": "https://robohash.org/10?set=set5",
-    "_id": "Y187w",
     "createdAt": 1755186745080
   }
 ]

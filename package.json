@@ -8,10 +8,12 @@
     "author": "Me",
     "type": "module",
     "dependencies": {
+        "bcrypt": "^6.0.0",
         "cookie-parser": "^1.4.6",
         "cors": "^2.8.5",
         "cryptr": "^6.2.0",
         "express": "^5.1.0",
-        "follow-redirects": "^1.15.3"
+        "follow-redirects": "^1.15.3",
+        "mongodb": "^6.18.0"
     }
 }

@@ -1,7 +1,7 @@
 
 import fs from 'fs'
 import { utilService } from './util.service.js'
-import { loggerService } from './logger.service.js'
+import { logger } from './logger.service.js'
 
 export const toyService = {
     query,
@@ -47,9 +47,9 @@ function query(filterBy = { txt: '' }) {
     return Promise.resolve(filteredToys)
 }
 
-function getById(toyId) {
+async function getById(toyId) {
     const toy = toys.find(toy => toy._id === toyId)
-    return Promise.resolve(toy)
+    return toy
 }
 
 function remove(toyId, loggedinUser) {
@@ -96,7 +96,7 @@ function _saveToysToFile() {
         const data = JSON.stringify(toys, null, 2)
         fs.writeFile('data/toy.json', data, (err) => {
             if (err) {
-                loggerService.error('Cannot write to toys file', err)
+                logger.error('Cannot write to toys file', err)
                 return reject(err)
             }
             resolve()
