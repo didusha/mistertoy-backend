@@ -14,6 +14,9 @@ import { logger } from './services/logger.service.js'
 import { toyRoutes } from './api/toy/toy.routes.js'
 import { authRoutes } from './api/auth/auth.routes.js'
 import { userRoutes } from './api/user/user.routes.js'
+import { reviewRoutes } from './api/review/review.routes.js'
+import { setupAsyncLocalStorage } from './middlewares/setupAls.middleware.js'
+
 // import { log } from 'console'
 
 
@@ -43,10 +46,14 @@ if (process.env.NODE_ENV === 'production') {
     app.use(cors(corsOptions))
 }
 
+app.all('*all', setupAsyncLocalStorage)
+
 // routes
 app.use('/api/auth', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/toy', toyRoutes)
+app.use('/api/review', reviewRoutes)
+
 
 // REST API for Toys
 // app.get('/api/toy', (req, res) => {

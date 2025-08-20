@@ -16,30 +16,10 @@ export const toyService = {
 
 async function query(filterBy = {}) {
 	try {
-		const criteria = {}
-
-		if (filterBy.txt) criteria.name = { $regex: filterBy.txt, $options: 'i' }
-
-		logger.info(" filterBy.maxPrice:", filterBy.maxPrice)
-		if (filterBy.inStock !== 'all') {
-			if (filterBy.inStock === 'true') criteria.inStock = true
-			else criteria.inStock = false
-		}
-
-		if (filterBy.maxPrice) criteria.price = { "$lt": filterBy.maxPrice }
-
-		if (filterBy.labels && filterBy.labels.length > 0) {
-			criteria.labels = { $in: filterBy.labels }
-		}
-
-		let sortBy = {}
-		if (filterBy.sortField) {
-			sortBy[filterBy.sortField] = filterBy.sortDir
-			//TODO: check sort by created date --> what goes into the field 
-		}
-
+		const { filter, sort, collation } = _buildCriteria(filterBy)
+		
 		const collection = await dbService.getCollection('toy')
-		var toys = await collection.find(criteria).sort(sortBy).toArray()
+        const toys = await collection.find(filter, { sort, collation }).toArray()
 		return toys
 	} catch (err) {
 		logger.error('cannot find toys', err)
@@ -106,7 +86,7 @@ async function update(toy) {
 async function addToyMsg(toyId, msg) {
 	try {
 		msg.id = utilService.makeId()
-
+		
 		const collection = await dbService.getCollection('toy')
 		await collection.updateOne({ _id: ObjectId.createFromHexString(toyId) }, { $push: { msgs: msg } })
 		return msg
@@ -125,4 +105,33 @@ async function removeToyMsg(toyId, msgId) {
 		logger.error(`cannot add toy msg ${toyId}`, err)
 		throw err
 	}
+}
+
+function _buildCriteria(filterBy) {
+	const filter = {}
+    if (filterBy.txt) {
+        filter.name = { $regex: filterBy.txt, $options: 'i' }
+    }
+	
+	if (filterBy.maxPrice) filter.price = { "$lt": filterBy.maxPrice }
+
+    if (filterBy.inStock !=="all") {
+		if(filterBy.inStock === 'true') filter.inStock = true
+		else filter.inStock = false
+    }
+
+    if (filterBy.labels && filterBy.labels.length) {
+        filter.labels = { $all: filterBy.labels }
+    }
+	
+    const sort = {}
+    const sortBy = filterBy.sortField
+    if (sortBy) {
+		const sortDirection = +filterBy.sortDir
+        const sortField = sortBy === 'createdAt' ? '_id' : sortBy
+        sort[sortField] = sortDirection
+    } else sort._id = -1
+
+    const collation = { locale: 'en' }
+    return { filter, sort, collation }
 }
