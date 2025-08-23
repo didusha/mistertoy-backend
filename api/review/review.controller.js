@@ -41,9 +41,10 @@ export async function addReview(req, res) {
 		const { aboutToyId } = review
 		review.byUserId = loggedinUser._id
 		review = await reviewService.add(review)
-
+		
 		// prepare the updated review for sending out
-
+		
+		review.createdAt = review._id.getTimestamp()
 		review.byUser = loggedinUser
 		review.aboutToy = await toyService.getById(aboutToyId)
 

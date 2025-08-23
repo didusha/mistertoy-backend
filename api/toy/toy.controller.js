@@ -1,6 +1,5 @@
 import { toyService } from './toy.service.js'
 import { logger } from '../../services/logger.service.js'
-import { console } from 'inspector'
 
 export async function getToys(req, res) {
     try {
@@ -32,8 +31,7 @@ export async function getToyById(req, res) {
     }
 }
 
-export async function addToy(req, res) {
-    //TODO: not getting the user    
+export async function addToy(req, res) { 
     const { loggedinUser } = req
 
     try {
@@ -71,9 +69,11 @@ export async function removeToy(req, res) {
 }
 
 export async function addToyMsg(req, res) {
+    console.log("🚀 ~ addToyMsg ~ req:", req.body)
     const { loggedinUser } = req
     try {
         const toyId = req.params.id
+        console.log("🚀 ~ addToyMsg ~ toyId:", toyId)
         const msg = {
             txt: req.body.txt,
             by: loggedinUser,

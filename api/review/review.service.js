@@ -42,6 +42,7 @@ async function query(filterBy = {}) {
             { 
                 $project: {
                     'txt': true, 
+                    createdAt: { $toDate: '$_id' },
                     'byUser._id': true, 'byUser.fullname': true,
                     'aboutToy._id': true, 'aboutToy.name': true,
                 } 

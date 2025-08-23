@@ -53,7 +53,6 @@ async function remove(toyId) {
 async function add(toy) {
 	try {
 		const collection = await dbService.getCollection('toy')
-		//TODO: need to add createdAt? 
 		// toy.createdAt = Date.now()
 		await collection.insertOne(toy)
 		return toy
